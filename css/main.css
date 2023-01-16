@@ -2,6 +2,7 @@
 :root {
   --primary: #151111;
   --secondary: #1d150b;
+
   --secondary-light: #c49b63;
   --yellow: #f8b500;
   --white: #fff;
@@ -421,22 +422,40 @@ button {
 /**************************/
 /*  book-table */
 /**************************/
+.order img {
+  /* position: absolute; */
+  width: 400px;
+  height: 430px;
+  object-fit: cover;
+}
+.order-container {
+  gap: 2rem;
+  margin-top: 3rem;
+}
 .form {
   gap: 1rem;
+  align-items: flex-start;
 }
+
 .form-input {
   gap: 1rem;
-}
-.form-input input {
   position: relative;
+}
+
+.form-input input {
   font-size: 1.2rem;
   padding: 0.5rem;
+  width: 350px;
 }
 .success-icon,
 .error-icon {
   position: absolute;
-  right: 10%;
+  right: -30px;
   font-size: 2rem;
+}
+/* -------for from validation js---- */
+.form-input.error {
+  margin-bottom: 8px;
 }
 .success-icon {
   color: var(--secondary-light);
@@ -450,7 +469,74 @@ button {
 .success-input {
   border: var(--secondary-light) solid 3px;
 }
-.form-input input small {
+/* --------- */
+.form-input small {
   position: absolute;
-  bottom: 0;
+  bottom: -18px;
+  left: 64px;
+  color: var(--red);
+}
+.form button {
+  width: 100%;
+  margin-top: 2rem;
+}
+/**************************/
+/*  footer */
+/**************************/
+footer {
+  background: var(--primary);
+  padding: 5rem 2rem;
+}
+.footer-items {
+  /* justify-content: space-between; */
+  gap: 8rem;
+  align-items: flex-start;
+  margin-bottom: 3rem;
+}
+.footer-item-about {
+  color: var(--gray);
+  max-width: 300px;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+.footer-item {
+  align-items: flex-start;
+}
+.footer-social {
+  gap: 1rem;
+}
+.footer-social a {
+  color: var(--secondary-light);
+  transition: all 0.3s;
+}
+.footer-social a:hover {
+  color: var(--white);
+}
+footer h6 {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+.footer-item ul {
+  list-style: none;
+  gap: 1rem;
+  align-items: flex-start;
+  color: var(--gray);
+}
+.footer-contact {
+  align-items: flex-start;
+  gap: 1rem;
+}
+.footer-contact a {
+  gap: 1rem;
+  color: var(--gray);
+  max-width: 300px;
+  transition: all 0.3s;
+}
+.footer-contact .bi {
+  color: var(--secondary-light);
+}
+.footer-contact a:hover {
+  color: var(--secondary-light);
 }

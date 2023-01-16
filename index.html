@@ -231,71 +231,125 @@
     </section>
 
     <!-- order -->
-    <section class="order">
+    <section class="order flex-column">
       <p class="before-title">Now</p>
       <h1 class="title">book a table</h1>
 
-      <form class="form flex-column">
-        <div class="form-input flex">
-          <i class="bi bi-person"></i>
-          <span></span>
-          <input type="text" id="name" placeholder="Name" />
-          <p class="success-icon">&#x2713;</p>
-          <p class="error-icon">&#x2717;</p>
-          <small>Error message</small>
-        </div>
+      <div class="order-container flex">
+        <img src="/images/table.png" alt="table in coffe shop" />
 
-        <!-- email input -->
-        <div class="form-input flex">
-          <i class="bi bi-envelope"></i>
-          <span></span>
-          <input type="email" id="email" placeholder="Email" />
-          <p class="success-icon">&#x2713;</p>
-          <p class="error-icon">&#x2717;</p>
-          <small>Error message</small>
-        </div>
+        <form class="form flex-column">
+          <div class="form-input flex">
+            <i class="bi bi-person"></i>
+            <span></span>
+            <input type="text" id="name" placeholder="Name" />
+            <p class="success-icon">&#x2713;</p>
+            <p class="error-icon">&#x2717;</p>
+            <small>Error message</small>
+          </div>
 
-        <!-- date input -->
-        <div class="form-input flex">
-          <i class="bi bi-calendar3"></i>
-          <span></span>
-          <input type="date" id="date" placeholder="Date" />
-          <p class="success-icon">&#x2713;</p>
-          <p class="error-icon">&#x2717;</p>
-          <small>Error message</small>
-        </div>
+          <!-- email input -->
+          <div class="form-input flex">
+            <i class="bi bi-envelope"></i>
+            <span></span>
+            <input type="email" id="email" placeholder="Email" />
+            <p class="success-icon">&#x2713;</p>
+            <p class="error-icon">&#x2717;</p>
+            <small>Error message</small>
+          </div>
 
-        <!-- time input -->
-        <div class="form-input flex">
-          <i class="bi bi-alarm"></i>
-          <span></span>
-          <input type="time" id="time" placeholder="Time" />
-          <p class="success-icon">&#x2713;</p>
-          <p class="error-icon">&#x2717;</p>
-          <small>Error message</small>
-        </div>
+          <!-- date input -->
+          <div class="form-input flex">
+            <i class="bi bi-calendar3"></i>
+            <span></span>
 
-        <!-- message -->
-        <div class="form-input flex">
-          <i class="bi bi-chat-left-text"></i>
-          <span></span>
-          <input type="text" id="message" placeholder="Message" />
-          <p class="success-icon">&#x2713;</p>
-          <p class="error-icon">&#x2717;</p>
-          <small>Error message</small>
-        </div>
+            <input type="date" id="date" placeholder="Date" />
+            <p class="success-icon">&#x2713;</p>
+            <p class="error-icon">&#x2717;</p>
+            <small>Error message</small>
+          </div>
 
-        <!-- phone -->
-        <div class="form-input flex">
-          <i class="bi bi-phone"></i>
-          <span></span>
-          <input type="number" id="phone" placeholder="Phone" />
-          <p class="success-icon">&#x2713;</p>
-          <p class="error-icon">&#x2717;</p>
-          <small>Error message</small>
-        </div>
-        <button class="btn-color">Create Account</button>
-      </form>
+          <!-- time input -->
+          <div class="form-input flex">
+            <i class="bi bi-alarm"></i>
+            <span></span>
+            <input type="time" id="time" placeholder="Time" />
+            <p class="success-icon">&#x2713;</p>
+            <p class="error-icon">&#x2717;</p>
+            <small>Error message</small>
+          </div>
+
+          <!-- message -->
+          <div class="form-input flex">
+            <i class="bi bi-chat-left-text"></i>
+            <span></span>
+            <input type="text" id="message" placeholder="Message" />
+            <p class="success-icon">&#x2713;</p>
+            <p class="error-icon">&#x2717;</p>
+            <small>Error message</small>
+          </div>
+
+          <!-- phone -->
+          <div class="form-input flex">
+            <i class="bi bi-phone"></i>
+            <span></span>
+            <input type="number" id="phone" placeholder="Phone" />
+            <p class="success-icon">&#x2713;</p>
+            <p class="error-icon">&#x2717;</p>
+            <small>Error message</small>
+          </div>
+          <button class="btn-color">Create Account</button>
+        </form>
+      </div>
     </section>
+
+    <!-- footer -->
+    <footer class="flex-column">
+      <div class="footer-items flex">
+        <div class="footer-item flex-column">
+          <h6>ABOUT US</h6>
+          <p class="footer-item-about">
+            Far far away, behind the word mountains, far from the countries
+            Vokalia and Consonantia, there live the blind texts.
+          </p>
+          <div class="footer-social flex">
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-whatsapp"></i></a>
+            <a href="#"><i class="bi bi-twitter"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-item flex-column">
+          <h6>SERVICES</h6>
+
+          <ul class="flex-column">
+            <li>Drinks</li>
+            <li>Dilever</li>
+            <li>Fast</li>
+            <li>Mixed</li>
+          </ul>
+        </div>
+
+        <div class="footer-item flex-column">
+          <h6>HAVE A QUESTIONS?</h6>
+
+          <div class="footer-contact flex-column">
+            <a class="flex">
+              <i class="bi bi-geo-alt"></i>
+              <p>203 Fake St. Mountain View, San Francisco, California, USA</p>
+            </a>
+            <a class="flex">
+              <i class="bi bi-envelope"></i>
+              <p>info@yourdomain.com</p>
+            </a>
+            <a class="flex">
+              <i class="bi bi-phone"></i>
+              <p>+2 392 3929 210</p>
+            </a>
+          </div>
+        </div>
+      </div>
+      <p>Copyright ©2023 All rights reserved</p>
+    </footer>
   </body>
 </html>

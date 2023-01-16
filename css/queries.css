@@ -54,6 +54,18 @@
     width: 150px;
     height: 150px;
   }
+  .form-input input {
+    max-width: 250px;
+  }
+  .order img {
+    width: 300px;
+  }
+  .order-container {
+    gap: 1rem;
+  }
+  .footer-items {
+    gap: 4rem;
+  }
 }
 
 /**************************/
@@ -82,6 +94,19 @@
     width: 200px;
     margin-bottom: 2rem;
   }
+  .order img {
+    display: none;
+  }
+  .form-input input {
+    width: 400px;
+  }
+  .order-container {
+    margin-top: 1rem;
+  }
+  .footer-items {
+    flex-direction: column;
+    margin-bottom: 5rem;
+  }
 }
 /**************************/
 /* BELOW 400px  */
@@ -96,5 +121,8 @@
   }
   .about-content img {
     width: 10rem;
+  }
+  .form-input input {
+    width: 250px;
   }
 }
