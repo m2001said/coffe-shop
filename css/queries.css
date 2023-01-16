@@ -1,0 +1,100 @@
+@media (max-width: 1600px) {
+}
+/**************************/
+/* BELOW 1344px (Smaller desktops) */
+/**************************/
+
+@media (max-width: 84em) {
+}
+
+/**************************/
+/* BELOW 1200px (Landscape Tablets) */
+/**************************/
+
+@media (max-width: 1200px) {
+}
+
+/**************************/
+/* BELOW 944px (Tablets) */
+/**************************/
+
+@media (max-width: 59em) {
+  section {
+    padding: 3rem 2rem;
+  }
+  section h1 {
+    margin-bottom: 2rem;
+  }
+  .about-text,
+  .home-text {
+    font-size: 1.2rem;
+  }
+  .home-btns {
+    margin-top: 2rem;
+  }
+  .btn-color,
+  .btn-white {
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
+  .about-content img {
+    width: 15rem;
+  }
+  .discover {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .discover-text {
+    text-align: center;
+  }
+  .discover-imgs {
+    max-width: 900px;
+  }
+  .discover-imgs img {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+/**************************/
+/* BELOW 704px (Smaller tablets) */
+/**************************/
+
+@media (max-width: 44em) {
+  .nav-liks {
+    display: none;
+  }
+  .bi-list {
+    display: inline-block;
+  }
+  .about-content {
+    flex-direction: column;
+  }
+  .services-items {
+    flex-direction: column;
+    gap: 3rem;
+  }
+  .menu-item {
+    height: 420px;
+  }
+  .rates-item {
+    /* flex-direction: column; */
+    width: 200px;
+    margin-bottom: 2rem;
+  }
+}
+/**************************/
+/* BELOW 400px  */
+/**************************/
+@media (max-width: 430px) {
+  section {
+    padding: 2rem;
+  }
+  .about-text,
+  .home-text {
+    font-size: 1rem;
+  }
+  .about-content img {
+    width: 10rem;
+  }
+}
