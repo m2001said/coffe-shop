@@ -8,7 +8,7 @@
   --white: #fff;
   --black: #000;
   --gray: rgb(175, 174, 174);
-  --red: red;
+  --red: rgb(190, 24, 24);
 }
 
 * {
@@ -182,7 +182,7 @@ a.nav-links-book:hover {
   text-align: center;
   flex-direction: column;
   background-image: radial-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.308)),
-    url(/images/coffe-cup.png);
+    url(/images/c.jpg);
   /* background: url(/images/back.png); */
   background-size: cover;
   background-repeat: no-repeat;
@@ -510,6 +510,7 @@ a.nav-links-book:hover {
   position: absolute;
   right: -30px;
   font-size: 2rem;
+  display: none;
 }
 /* -------for from validation js---- */
 .form-input.error {
@@ -521,11 +522,13 @@ a.nav-links-book:hover {
 .error-icon {
   color: var(--red);
 }
-.error-input {
-  border: var(--red) solid 3px;
+.form-input.error-input {
+  border: var(--red) solid 1px;
+  padding: 3px;
 }
-.success-input {
-  border: var(--secondary-light) solid 3px;
+.form-input.success-input {
+  border: var(--secondary-light) solid 1px;
+  padding: 3px;
 }
 /* --------- */
 .form-input small {
@@ -533,10 +536,19 @@ a.nav-links-book:hover {
   bottom: -15px;
   left: 64px;
   color: var(--red);
+  /* display: none; */
 }
 .form button {
   width: 100%;
   margin-top: 2rem;
+}
+.form-succes {
+  color: var(--white);
+  align-self: center;
+  text-align: center;
+
+  /* padding: 0.5rem 1rem; */
+  font-size: 1.1rem;
 }
 /**************************/
 /*  footer */

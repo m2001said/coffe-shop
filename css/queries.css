@@ -136,7 +136,8 @@
     display: none;
   }
   .form-input input {
-    width: 400px;
+    width: 100%;
+    width: 700px;
   }
   .order-container {
     margin-top: 1rem;
@@ -172,9 +173,7 @@
   .form-input {
     gap: 5px;
   }
-  .form-input input {
-    width: 100%;
-  }
+
   .order {
     padding: 3rem 3px;
   }
