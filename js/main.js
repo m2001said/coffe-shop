@@ -210,3 +210,32 @@ form.addEventListener("submit", (e) => {
     : ((formSuccessMessage.textContent = "You should complete all the input"),
       (formSuccessMessage.style.color = "red"));
 });
+
+// -------scrolling animation---------------
+const boxRight = document.querySelectorAll(".scroll-right");
+const boxLeft = document.querySelectorAll(".scroll-left");
+
+window.addEventListener("scroll", checkRightBox);
+window.addEventListener("scroll", checkLeftBox);
+
+// for checking top of element
+function checkTop(element) {
+  const triggerBottom = (window.innerHeight / 4) * 4;
+  const boxTop = element.getBoundingClientRect().top;
+  if (boxTop < triggerBottom) {
+    element.classList.add("show");
+  } else {
+    element.classList.remove("show");
+  }
+}
+
+function checkRightBox() {
+  boxLeft.forEach((box) => {
+    checkTop(box);
+  });
+}
+function checkLeftBox() {
+  boxRight.forEach((box) => {
+    checkTop(box);
+  });
+}

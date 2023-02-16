@@ -85,7 +85,18 @@ button {
   width: 100%;
   z-index: 999;
 }
-
+.scroll-right {
+  transform: translateX(400%);
+  transition: all 0.4s ease;
+}
+.scroll-left {
+  transform: translateX(-400%);
+  transition: all 0.4s ease;
+}
+.scroll-right.show,
+.scroll-left.show {
+  transform: translateX(0);
+}
 /**************************/
 /*  header */
 /**************************/
