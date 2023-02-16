@@ -26,51 +26,60 @@
     <link rel="stylesheet" href="css/queries.css" />
   </head>
   <body>
-    <!-- nav -->
-    <nav class="nav flex">
-      <a class="logo" href="/">Your Coffee</a>
-      <div class="nav-liks flex">
-        <a href="#services">about</a>
+    <header>
+      <!-- nav -->
+      <nav class="nav flex">
+        <a class="logo" href="/">Your Coffee</a>
+        <div class="nav-links">
+          <a href="#about">about</a>
+          <a href="#services">services</a>
+          <a href="#menu">Menu</a>
+          <a href="#customers">Customers</a>
+          <a href="#book" class="nav-links-book">Book table</a>
+        </div>
+        <div class="nav-icons">
+          <i class="bi bi-cart4">
+            <span class="nav-icons-cartnum flex">6</span></i
+          >
+          <i class="bi bi-list"></i>
+        </div>
+      </nav>
+      <!-- links mobile -->
+      <!-- <div class="nav-mobile flex-column">
+        <a href="#about">about</a>
         <a href="#services">services</a>
         <a href="#menu">Menu</a>
-        <a href="#services">Customers</a>
-      </div>
-      <div class="nav-icons">
-        <i class="bi bi-cart4">
-          <span class="nav-icons-cartnum flex">6</span></i
-        >
-        <i class="bi bi-list"></i>
-      </div>
-    </nav>
-    <!-- home -->
-    <section class="home flex">
-      <p class="before-title">Welcome to</p>
-      <h1 class="title">Your Coffee</h1>
-      <p class="home-text">
-        Welcome to our coffee website! We are dedicated to bringing you the
-        finest, hand-roasted coffee beans from around the world. Our team of
-        coffee aficionados has tasted and tested countless beans to curate a
-        selection of exceptional flavors for you to enjoy.
-      </p>
-      <div class="home-btns flex">
-        <button class="btn-white">Order Now</button>
-        <button class="btn-color">View Menu</button>
-      </div>
-      <div class="home-circles flex">
-        <div>
-          <span></span>
+        <a href="#customers">Customers</a>
+      </div> -->
+      <!-- home -->
+      <section class="home flex">
+        <p class="before-title">Welcome to</p>
+        <h1 class="title">Your Coffee</h1>
+        <p class="home-text">
+          Welcome to our coffee website! We are dedicated to bringing you the
+          finest, hand-roasted coffee beans from around the world. Our team of
+          coffee aficionados has tasted and tested countless beans to curate a
+          selection of exceptional flavors for you to enjoy.
+        </p>
+        <div class="home-btns flex">
+          <a href="#book" class="btn-white order-btn">Order Now</a>
+          <a href="#menu" class="btn-color menu-btn">View Menu</a>
         </div>
-        <div>
-          <span></span>
-        </div>
-        <div>
-          <span></span>
-        </div>
-      </div>
-    </section>
-
+        <!-- <div class="home-circles flex">
+          <div>
+            <span></span>
+          </div>
+          <div>
+            <span></span>
+          </div>
+          <div>
+            <span></span>
+          </div>
+        </div> -->
+      </section>
+    </header>
     <!-- about -->
-    <section class="about flex">
+    <section class="about flex" id="about">
       <p class="before-title">Know</p>
       <h1 class="title">About us</h1>
 
@@ -91,7 +100,7 @@
     </section>
 
     <!-- services -->
-    <section class="services flex-column">
+    <section class="services flex-column" id="services">
       <p class="before-title">Know</p>
       <h1 class="title">Our Services</h1>
 
@@ -138,7 +147,7 @@
           language ocean.
         </p>
 
-        <a href="#" class="btn-white"> View Full Menu</a>
+        <a href="#menu" class="menu-btn btn-white"> View Full Menu</a>
       </div>
 
       <div class="discover-imgs flex">
@@ -174,7 +183,7 @@
     </section>
 
     <!-- menu -->
-    <section class="menu flex-column">
+    <section class="menu flex-column" id="menu">
       <p class="before-title">Discover</p>
       <h1 class="title">BEST COFFEE SELLERS</h1>
 
@@ -211,27 +220,77 @@
     </section>
 
     <!-- Testimonials -->
-    <section class="testimonials flex-column">
+    <section class="testimonials flex-column" id="customers">
       <p class="before-title">Testimony</p>
       <h1 class="title">customers says</h1>
 
       <div class="testimonials-container">
-        <button class="left">&#8672;</button>
-        <button class="right">&#8674;</button>
-        <!-- <button><i class="bi bi-chevron-double-left"></i></button> -->
-        <p>
-          “Even the all-powerful Pointing has no control about the blind texts
-          it is an almost unorthographic life One day however a small.”
-        </p>
-        <div class="testimonials-person flex">
-          <img src="/images/person_2.jpg" />
-          <p>mohamed said</p>
+        <button class="testimonials-left">&#8672;</button>
+        <button class="testimonials-right">&#8674;</button>
+        <div class="testimonials-slides flex">
+          <!-- 1 -->
+          <div class="slide active">
+            <p>
+              “I absolutely adore Your Coffee! The quality of their beans is
+              exceptional and their baristas are true artists. I always get a
+              cappuccino, and it's always perfect. I love the cozy atmosphere,
+              too. It's my favorite spot for a peaceful morning coffee break.”
+            </p>
+            <div class="testimonials-person flex">
+              <img src="/images/person_1.jpg" />
+              <p>Louise Kelly</p>
+            </div>
+          </div>
+
+          <!-- 2 -->
+          <div class="slide">
+            <p>
+              Your Coffee is a great place for me because they have a range of
+              alternative milks, like almond and oat milk, which I appreciate
+              since I avoid dairy. They also offer organic, fair-trade coffee
+              beans, which aligns with my values. It's a nice treat to enjoy a
+              tasty and ethically-sourced latte or iced coffee”
+            </p>
+            <div class="testimonials-person flex">
+              <img src="/images/person_2.jpg" />
+              <p>ali moraad</p>
+            </div>
+          </div>
+
+          <!-- 3 -->
+          <div class="slide">
+            <p>
+              “Your Coffee is the perfect place for me to take Instagram photos!
+              The decor is so aesthetically pleasing, and the latte art is
+              always so pretty. I love the unique mugs they use, and the
+              atmosphere is so cozy and trendy. It's definitely a place to visit
+              if you want to get some great photos for your feed.”
+            </p>
+            <div class="testimonials-person flex">
+              <img src="/images/person_4.jpg" />
+              <p>daivid mansour</p>
+            </div>
+          </div>
+
+          <!--4 -->
+          <div class="slide">
+            <p>
+              “I often grab a coffee from Your Coffee on my way to work. It's
+              really convenient because they have a drive-thru and it's always
+              quick. Plus, the quality of their coffee is really high. It's a
+              great start to my day, and the service is always friendly.”
+            </p>
+            <div class="testimonials-person flex">
+              <img src="/images/person_3.jpg" />
+              <p>yousef khalil</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- order -->
-    <section class="order flex-column">
+    <section class="order flex-column" id="book">
       <p class="before-title">Now</p>
       <h1 class="title">book a table</h1>
 
@@ -351,5 +410,7 @@
       </div>
       <p>Copyright ©2023 All rights reserved</p>
     </footer>
+
+    <script src="js/main.js" />
   </body>
 </html>

@@ -19,7 +19,6 @@
 
 html {
   overflow-x: hidden;
-  scroll-behavior: smooth;
 }
 
 body {
@@ -68,6 +67,7 @@ button {
   margin-bottom: 3rem;
   margin-top: -10px;
   text-transform: uppercase;
+  text-align: center;
 }
 .before-title {
   font-family: "Great Vibes", cursive;
@@ -79,6 +79,13 @@ button {
   font-family: "Great Vibes", cursive;
   /* text-transform: uppercase; */
 }
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+
 /**************************/
 /*  header */
 /**************************/
@@ -87,6 +94,10 @@ button {
   background: var(--primary);
   color: var(--white);
   padding: 1rem 2rem;
+  position: relative;
+}
+.nav.sticky {
+  position: fixed;
 }
 
 .nav a {
@@ -96,10 +107,23 @@ button {
 .nav a:hover {
   color: var(--secondary-light);
 }
-.nav-liks {
+.nav-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   gap: 1rem;
   font-size: 1.2rem;
   text-transform: capitalize;
+}
+a.nav-links-book {
+  background: var(--secondary-light);
+  color: var(--primary);
+  border-radius: 5px;
+  /* height: 100%; */
+  padding: 0.5rem;
+}
+a.nav-links-book:hover {
+  background: var(--white);
 }
 .bi {
   font-size: 27px;
@@ -128,6 +152,29 @@ button {
 .bi-list {
   display: none;
 }
+/* .nav-mobile {
+  position: absolute;
+  background: var(--primary);
+  color: var(--white);
+  gap: 1.5rem;
+  width: 250px;
+  right: 0;
+  padding: 2rem 1rem;
+  display: none;
+}
+.nav-mobile a {
+  color: var(--white);
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  transition: all 0.3s;
+
+}
+.nav-mobile a:hover {
+  color: var(--secondary-light);
+}
+.nav-mobile.flex {
+  display: flex;
+} */
 /**************************/
 /*  home */
 /**************************/
@@ -169,6 +216,7 @@ button {
 .btn-color,
 .btn-white:hover {
   background: var(--secondary-light);
+  color: var(--primary);
   border: 1px solid transparent;
 }
 .home-circles {
@@ -392,16 +440,20 @@ button {
   top: 65%;
   color: var(--secondary-light);
 }
-.left {
+.testimonials-left {
   left: 20px;
 }
-.right {
+.testimonials-right {
   right: 20px;
 }
-.testimonials-container p {
+.slide > p {
   font-size: 1.2rem;
   text-align: center;
   margin-bottom: 2rem;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .testimonials-person {
   gap: 1rem;
@@ -416,8 +468,14 @@ button {
 .testimonials-person p {
   font-size: 1.2rem;
   text-transform: capitalize;
-  margin-top: 23px;
   color: var(--gray);
+}
+
+.slide {
+  display: none;
+}
+.slide.active {
+  display: block;
 }
 /**************************/
 /*  book-table */
@@ -472,7 +530,7 @@ button {
 /* --------- */
 .form-input small {
   position: absolute;
-  bottom: -18px;
+  bottom: -15px;
   left: 64px;
   color: var(--red);
 }
@@ -539,4 +597,35 @@ footer h6 {
 }
 .footer-contact a:hover {
   color: var(--secondary-light);
+}
+/**************************/
+/*  keyframes */
+/**************************/
+@-webkit-keyframes scale-up-hor-right {
+  0% {
+    -webkit-transform: scaleX(0.4);
+    transform: scaleX(0.4);
+    -webkit-transform-origin: 100% 100%;
+    transform-origin: 100% 100%;
+  }
+  100% {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    -webkit-transform-origin: 100% 100%;
+    transform-origin: 100% 100%;
+  }
+}
+@keyframes scale-up-hor-right {
+  0% {
+    -webkit-transform: scaleX(0.4);
+    transform: scaleX(0.4);
+    -webkit-transform-origin: 100% 100%;
+    transform-origin: 100% 100%;
+  }
+  100% {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    -webkit-transform-origin: 100% 100%;
+    transform-origin: 100% 100%;
+  }
 }
